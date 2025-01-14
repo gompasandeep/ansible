@@ -1,7 +1,11 @@
 - name: variables
   hosts: local
   connection: local
+  vars:
+    PURPOSE: bounce back
+    NAME: Sandeep
+    Year: 2025
   tasks:
   - name: print the variable
     ansible.builtin.debug:
-      msg: "Sandeep will bounce back in 2025"
+      msg: "{{ NAME }} will {{ PURPOSE } in {{ Year }}"
