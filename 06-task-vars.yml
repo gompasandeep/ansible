@@ -7,5 +7,11 @@
     Year: 2025
   tasks:
   - name: print the variable
+    vars: #task level variable
+      PURPOSE: I'll be back
+    ansible.builtin.debug:
+      msg: "{{ NAME }} will {{ PURPOSE }} in {{ Year }}"
+  
+  - name: print the variable1
     ansible.builtin.debug:
       msg: "{{ NAME }} will {{ PURPOSE }} in {{ Year }}"
