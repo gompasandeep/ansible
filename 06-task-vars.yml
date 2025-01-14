@@ -7,7 +7,7 @@
     Year: 2025
   tasks:
   - name: print the variable
-    vars: #task level variable
+    vars: #task level variable, accessible only within the task, task variables can overwrite play level variable.
       PURPOSE: I'll be back
     ansible.builtin.debug:
       msg: "{{ NAME }} will {{ PURPOSE }} in {{ Year }}"
