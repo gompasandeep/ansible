@@ -3,5 +3,5 @@
   connection: local
   tasks:
   - name: print the variable
-    ansible.built.debug:
+    ansible.builtin.debug:
       msg: "Sandeep will bounce back in 2025"
