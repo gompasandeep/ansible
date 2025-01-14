@@ -16,8 +16,10 @@
     ansible.builtin.debug:
       msg: "Hello from {{ GREET }}"
 
+
+# Ansible playbook based on the preferences
 #1. Command line or ARGS
 #2. Task level
-#3. Prompt
+#3. Files
 #4. Play
 #5. Inventory
