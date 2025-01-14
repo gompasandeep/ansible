@@ -1,0 +1,7 @@
+- name: variables
+  hosts: local
+  connection: local
+  tasks:
+  - name: print the variable
+    ansible.built.debug:
+      msg: "Sandeep will bounce back in 2025"
