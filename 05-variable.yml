@@ -8,4 +8,4 @@
   tasks:
   - name: print the variable
     ansible.builtin.debug:
-      msg: "{{ NAME }} will {{ PURPOSE } in {{ Year }}"
+      msg: "{{ NAME }} will {{ PURPOSE }} in {{ Year }}"
