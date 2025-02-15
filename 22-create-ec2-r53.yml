@@ -6,6 +6,7 @@
     sg_id: sg-062c5cee10335e6cc
     ami_id: ami-09c813fb71547fc4f
     instance_type: t2.micro
+    zone: sancharlearning.xyz
     instances:
     - mysql
     - backend
@@ -28,9 +29,9 @@
     loop: "{{ instances }}"
     register: ec2_info
 
-  - name: print ec2_info
-    ansible.builtin.debug:
-      msg: "{{ ec2_info }}"
+  # - name: print ec2_info
+  #   ansible.builtin.debug:
+  #     msg: "{{ ec2_info }}"
 
   - name: print private ip addresses
     ansible.builtin.debug:
